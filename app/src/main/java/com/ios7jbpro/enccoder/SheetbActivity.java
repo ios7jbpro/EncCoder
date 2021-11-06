@@ -23,6 +23,8 @@ import java.util.*;
 import java.util.regex.*;
 import java.text.*;
 import org.json.*;
+import java.util.ArrayList;
+import java.util.HashMap;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.content.Intent;
@@ -35,16 +37,21 @@ import androidx.fragment.app.DialogFragment;
 
 public class SheetbActivity extends AppCompatActivity {
 	
+	private ArrayList<HashMap<String, Object>> listmap = new ArrayList<>();
+	
 	private LinearLayout linear2;
 	private LinearLayout linear1;
+	private LinearLayout linear3;
+	private TextView textview3;
 	private TextView textview1;
 	private TextView textview2;
-	private TextView textview3;
 	private TextView textview4;
 	private TextView textview5;
 	private TextView textview6;
+	private TextView textview7;
 	
 	private Intent openlink = new Intent();
+	private Intent othe = new Intent();
 	
 	@Override
 	protected void onCreate(Bundle _savedInstanceState) {
@@ -57,12 +64,14 @@ public class SheetbActivity extends AppCompatActivity {
 	private void initialize(Bundle _savedInstanceState) {
 		linear2 = (LinearLayout) findViewById(R.id.linear2);
 		linear1 = (LinearLayout) findViewById(R.id.linear1);
+		linear3 = (LinearLayout) findViewById(R.id.linear3);
+		textview3 = (TextView) findViewById(R.id.textview3);
 		textview1 = (TextView) findViewById(R.id.textview1);
 		textview2 = (TextView) findViewById(R.id.textview2);
-		textview3 = (TextView) findViewById(R.id.textview3);
 		textview4 = (TextView) findViewById(R.id.textview4);
 		textview5 = (TextView) findViewById(R.id.textview5);
 		textview6 = (TextView) findViewById(R.id.textview6);
+		textview7 = (TextView) findViewById(R.id.textview7);
 		
 		textview3.setOnClickListener(new View.OnClickListener() {
 			@Override
@@ -94,6 +103,15 @@ public class SheetbActivity extends AppCompatActivity {
 				startActivity(openlink);
 			}
 		});
+		
+		textview7.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View _view) {
+				othe.setClass(getApplicationContext(), MthrwrkbActivity.class);
+				startActivity(othe);
+				finish();
+			}
+		});
 	}
 	
 	private void initializeLogic() {
@@ -104,11 +122,13 @@ public class SheetbActivity extends AppCompatActivity {
 			w.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS); w.setStatusBarColor(Color.TRANSPARENT);
 		}
 		_rippleRoundStroke(linear1, "#FFFFFF", "#FFFFFF", 40, 0, "#000000");
+		_rippleRoundStroke(linear3, "#FFFFFF", "#FFFFFF", 40, 0, "#000000");
 		_rippleRoundStroke(linear2, "#FFFFFF", "#FFFFFF", 360, 0, "#000000");
-		_rippleRoundStroke(textview3, "#FFFFFF", "#2196F3", 360, 0, "#000000");
-		_rippleRoundStroke(textview4, "#FFFFFF", "#2196F3", 360, 0, "#000000");
-		_rippleRoundStroke(textview5, "#FFFFFF", "#2196F3", 360, 0, "#000000");
-		_rippleRoundStroke(textview6, "#FFFFFF", "#2196F3", 360, 0, "#000000");
+		_rippleRoundStroke(textview3, "#FFFFFF", "#2196F3", 40, 0, "#000000");
+		_rippleRoundStroke(textview4, "#FFFFFF", "#2196F3", 40, 0, "#000000");
+		_rippleRoundStroke(textview5, "#FFFFFF", "#2196F3", 40, 0, "#000000");
+		_rippleRoundStroke(textview6, "#FFFFFF", "#2196F3", 40, 0, "#000000");
+		_rippleRoundStroke(textview7, "#FFFFFF", "#2196F3", 40, 0, "#000000");
 	}
 	
 	@Override

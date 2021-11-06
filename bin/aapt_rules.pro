@@ -169,11 +169,14 @@
 # view res/layout/material_chip_input_combo.xml #generated:18
 -keep class com.google.android.material.timepicker.ChipTextInputComboView { <init>(...); }
 
-# view AndroidManifest.xml #generated:39
+# view AndroidManifest.xml #generated:45
 -keep class com.ios7jbpro.enccoder.DebugActivity { <init>(...); }
 
 # view AndroidManifest.xml #generated:15
 -keep class com.ios7jbpro.enccoder.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:39
+-keep class com.ios7jbpro.enccoder.MthrwrkbActivity { <init>(...); }
 
 # view AndroidManifest.xml #generated:27
 -keep class com.ios7jbpro.enccoder.SheetbActivity { <init>(...); }

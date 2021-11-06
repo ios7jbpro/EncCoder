@@ -221,8 +221,8 @@ public class MainActivity extends AppCompatActivity {
 		cardview1.setCardBackgroundColor(0xFF2196F3);
 		cardview2.setCardBackgroundColor(0xFF2196F3);
 		cardview3.setCardBackgroundColor(0xFFF44336);
-		_rippleRoundStroke(button1, "#0D47A1", "#FFFFFF", 360, 0, "#000000");
-		_rippleRoundStroke(button2, "#0D47A1", "#FFFFFF", 360, 0, "#000000");
+		_rippleRoundStroke(button1, "#0D47A1", "#FFFFFF", 40, 0, "#000000");
+		_rippleRoundStroke(button2, "#0D47A1", "#FFFFFF", 40, 0, "#000000");
 	}
 	
 	@Override

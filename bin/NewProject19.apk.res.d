@@ -1033,6 +1033,7 @@
 /storage/emulated/0/.sketchware/mysc/713/app/src/main/res/drawable-xhdpi/default_image.png \
 /storage/emulated/0/.sketchware/mysc/713/app/src/main/res/drawable-xhdpi/ic_filter_none_white.png \
 /storage/emulated/0/.sketchware/mysc/713/app/src/main/res/drawable-xhdpi/ic_info_black.png \
+/storage/emulated/0/.sketchware/mysc/713/app/src/main/res/layout/mthrwrkb.xml \
 /storage/emulated/0/.sketchware/mysc/713/app/src/main/res/layout/updatesheetb.xml \
 /storage/emulated/0/.sketchware/mysc/713/app/src/main/res/layout/sheetb.xml \
 /storage/emulated/0/.sketchware/mysc/713/app/src/main/res/layout/main.xml \

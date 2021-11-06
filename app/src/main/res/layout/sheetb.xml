@@ -41,16 +41,15 @@
 			android:text="By ios7jbpro with &lt;3.\nTested by WindowZ414.\nTested by icylemon.\nTested by sertacordar.\nTested by Cotunjr.\nTested by ssSmogg.\nTested by alt1nay.\nTested by MFZengin.\nTested by lipirci19.\nTested by AospkurmayanGay.\nTested by sudo_nautilus.\nTested by Mikey_san7.\nBottomSheetAsActivity by shapun.\n\nAs always:\nSharing without credits:\nDie."
 			android:textSize="12sp"
 			android:textColor="#000000"/>
-		<TextView
-			android:id="@+id/textview3"
-			android:layout_width="match_parent"
-			android:layout_height="45dp"
-			android:padding="8dp"
-			android:gravity="center_horizontal|center_vertical"
-			android:text="Close"
-			android:textSize="12sp"
-			android:textStyle="bold"
-			android:textColor="#2196F3"/>
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/linear3"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+		android:background="#FFFFFF"
+		android:orientation="vertical">
 		<TextView
 			android:id="@+id/textview4"
 			android:layout_width="match_parent"
@@ -82,4 +81,30 @@
 			android:textStyle="bold"
 			android:textColor="#9C27B0"/>
 	</LinearLayout>
+	<TextView
+		android:id="@+id/textview7"
+		android:layout_width="match_parent"
+		android:layout_height="45dp"
+		android:layout_marginLeft="15dp"
+		android:layout_marginTop="15dp"
+		android:layout_marginRight="15dp"
+		android:padding="8dp"
+		android:background="#FFFFFF"
+		android:gravity="center_horizontal|center_vertical"
+		android:text="My Other Work"
+		android:textSize="12sp"
+		android:textStyle="bold"
+		android:textColor="#2196F3"/>
+	<TextView
+		android:id="@+id/textview3"
+		android:layout_width="match_parent"
+		android:layout_height="45dp"
+		android:layout_margin="15dp"
+		android:padding="8dp"
+		android:background="#FFFFFF"
+		android:gravity="center_horizontal|center_vertical"
+		android:text="Close"
+		android:textSize="12sp"
+		android:textStyle="bold"
+		android:textColor="#2196F3"/>
 </LinearLayout>
